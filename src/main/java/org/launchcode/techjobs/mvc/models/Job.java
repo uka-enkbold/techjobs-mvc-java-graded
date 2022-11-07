@@ -54,7 +54,8 @@ public class Job {
                 "Employer: %s\n" +
                 "Location: %s\n" +
                 "Position Type: %s\n" +
-                "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
+                "Core Competency: %s\n ", id, name, employer, location, positionType,
+                coreCompetency);
         return output;
     }
 
