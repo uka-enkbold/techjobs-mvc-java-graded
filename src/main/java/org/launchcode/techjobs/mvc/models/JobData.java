@@ -229,6 +229,11 @@ public class JobData {
         allCoreCompetency.sort(new NameSorter());
         return allCoreCompetency;
     }
-
+    //todo2
+    public static ArrayList<Job> getAllJobs() {
+        loadData();
+        allJobs.sort(new NameSorter());
+        return allJobs;
+    }
 }
 

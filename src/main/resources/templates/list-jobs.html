@@ -15,53 +15,36 @@
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
 <!--        for loop her with thymeleaf-->
-        <table th:each="job: ${jobs} " class="job-listing" >
+        <table th:each="job: ${jobs}" class="job-listing" >
 
 <!--            //table row-->
             <tr>
-                <th>
-                   ID
-                </th>
-                <td th:text = "${job.id}" >
-                </td>
+                <th>ID</th>
+                <td th:text = "${job.id}" ></td>
             </tr>
             <tr>
-                <th>
-                    Name
-                </th>
-
+                <th>Name</th>
                 <td th:text = "${job.name}" >
                 </td>
             </tr>
             <tr>
-                <th>
-                    Employer
-                </th>
-
+                <th>Employer</th>
                 <td th:text = "${job.employer}" >
                 </td>
             </tr>
             <tr>
-                <th >
-                    Location
-                </th>
-
+                <th>Location</th>
                 <td th:text = "${job.location}" >
                 </td>
             </tr>
             <tr>
-                <th >
-                    Position Type
-                </th>
-                <td th:text = "${job.positionType}" >
+                <th>Position</th>
+                <td th:text = "${job.positionType}">
                 </td>
             </tr>
             <tr>
-                <th >
-                    Skill
-                </th >
-
-                <td th:text = "${job.coreCompetency}"  >
+                <th>Skill</th>
+                <td th:text = "${job.coreCompetency}">
                 </td>
             </tr>
 <!--           separate them with each table they all smudged together-->
